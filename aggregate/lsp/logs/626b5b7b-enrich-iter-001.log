@@ -1,0 +1,16 @@
+[2026-04-21T18:21:12Z] === ENRICH ITERATION 1 START | repo=apple/swift-argument-parser sha=626b5b7b ===
+[2026-04-21T18:21:12Z] [iter=1] PHASE START: enrich repo=apple/swift-argument-parser sha=626b5b7b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/626b5b7b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/626b5b7b2f45e1b0b1c6f4a309296d1d21d7311b.nq.gz
+[2026-04-21T18:21:12Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-21T18:21:28Z] [iter=1] AST store loaded triples=875160 load_secs=16 mem_mb=887 MB
+[2026-04-21T18:21:28Z] [iter=1] Step 2: Finding LSP targets mem_mb=887 MB
+[2026-04-21T18:21:31Z] [iter=1] LSP targets found call_sites=5621 imports=256 extends=0 implements=0 secs=3
+[2026-04-21T18:21:34Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=887 MB
+[2026-04-21T18:21:37Z] [iter=1] Position index built positions=51950 nodes_with_types=60562 secs=3 mem_mb=887 MB
+[2026-04-21T18:21:37Z] [iter=1] Step 3: Starting LSP resolution mem_mb=887 MB already_completed_types=[] already_completed_files=0
+[2026-04-21T18:21:37Z] [iter=1] Resolving target type target_type=call_site count=5621
+[2026-04-21T18:21:39Z] [iter=1] Target type resolved target_type=call_site resolved=0 errors=5621 secs=2 mem_mb=887 MB
+[2026-04-21T18:21:39Z] [iter=1] Resolving target type target_type=import_statement count=256
+[2026-04-21T18:21:40Z] [iter=1] Target type resolved target_type=import_statement resolved=0 errors=256 secs=1 mem_mb=887 MB
+[2026-04-21T18:21:40Z] [iter=1] Step 5: Writing final enrichment file triples=523
+[2026-04-21T18:21:40Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/626b5b7b2f45e1b0b1c6f4a309296d1d21d7311b.nq.gz size_kb=6
+[2026-04-21T18:21:40Z] [iter=1] PHASE END: enrich elapsed_s=27 elapsed_min=0.5 total_triples=523
